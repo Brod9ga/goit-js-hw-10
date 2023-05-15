@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix';
 import { fetchCountries } from './fetchCountries.js';
 import { createCountryList } from './createCountryList.js';
-import { сreateCountryInfo } from './сreateCountryInfo.js';
+import { createCountryInfo } from './createCountryInfo.js';
 import { clear } from './clear.js';
 
 export function onSearch() {
@@ -22,7 +22,7 @@ export function onSearch() {
       } else if (countries.length >= 2 && countries.length <= 10) {
         createCountryList(countries);
       } else if (countries.length === 1) {
-        сreateCountryInfo(countries[0]);
+        createCountryInfo(countries[0]);
       }
     })
     .catch(error => {
