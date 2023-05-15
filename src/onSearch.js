@@ -11,6 +11,7 @@ export function onSearch() {
     clear();
     return;
   }
+  
   fetchCountries(name)
     .then(countries => {
       clear();
